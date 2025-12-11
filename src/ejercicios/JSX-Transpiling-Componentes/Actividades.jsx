@@ -19,14 +19,7 @@ export default function BotonActividadTres(props, color, callback) {
 
 /* Ejemplo de uso:
 
-<BotonActividadTres
-      color={"red"}
-      callback={() => {
-        alert("hola");
-      }}
-    >
-      hola
-    </BotonActividadTres>
+<BotonActividadTres color={"red"} callback={() => {alert("esto es un alert");}}> esto es el children </BotonActividadTres>
 
 
 */
