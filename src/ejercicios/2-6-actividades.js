@@ -24,11 +24,15 @@ Array.prototype.miMap = function (callback) {
 const numeros = [1, 2, 3, 4, 5, 6];
 
 const resultado = numeros.miMap((n, i, array) => {
+
     if (i === 0) {
         console.log(array);
     }
+
     console.log(i)
+
     return n * 10
+
 })
 
 console.log(resultado)
@@ -41,12 +45,13 @@ Del mismo modo podemos implementar un polyfill para el método filter de los Arr
 Entender el funcionamiento de estos métodos nos ayudará a comprender los principios de inmutabilidad de la programación funcional. Esto utiliza React para poder hacer la manipulación del DOM de forma performante. No olvidar que necesitamos RETORNAR un array con los elementos que cumplen con la condición del filtro, por lo que dentro necesitaremos de un IF. */
 
 Array.prototype.miFilter = function (callback) {
+
     const nuevoArray = [];
     const arrayOriginal = this;
 
     for (let i = 0; i < arrayOriginal.length; i++) {
 
-        const nuevoElemento = callback(arrayOriginal[i])
+        const nuevoElemento = callback(arrayOriginal[i], i, arrayOriginal)
 
         if (nuevoElemento === true) {
             nuevoArray.push(arrayOriginal[i]);
@@ -57,9 +62,20 @@ Array.prototype.miFilter = function (callback) {
 }
 
 // Prueba
-console.log("//////////////////////////////////");
 
-const resultado2 = numeros.miFilter(num => num > 0)
+console.log("///////////////// Ejercicio 2 /////////////////");
+
+const resultado2 = numeros.miFilter((n, i, array) => {
+
+    if (i === 0) {
+        console.log(array);
+    }
+
+    console.log(i);
+
+    return n > 3;
+
+})
 
 console.log(resultado2);
 
