@@ -53,7 +53,7 @@ Array.prototype.miFilter = function (callback) {
 
         const nuevoElemento = callback(arrayOriginal[i], i, arrayOriginal)
 
-        if (nuevoElemento === true) {
+        if (nuevoElemento) {
             nuevoArray.push(arrayOriginal[i]);
         }
     }
