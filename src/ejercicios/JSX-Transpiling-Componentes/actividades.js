@@ -6,6 +6,8 @@ Implementar un polyfills del método map de los arrays. Debemos suponer que los 
 
 Es necesario utilizar el objetos this, que en este caso va a hacer referencia al dueño de la función map que es ejecutada. Por eso mismo, necesitaremos de una función regular y no una arrow function. Recordar que necesitamos RETORNAR el array transformado. */
 
+console.log("///////////////// Ejercicio 1 /////////////////");
+
 Array.prototype.miMap = function (callback) {
 
     const nuevoArray = []
@@ -78,10 +80,3 @@ const resultado2 = numeros.miFilter((n, i, array) => {
 })
 
 console.log(resultado2);
-
-/* Actividad 3: Botón Multiuso II
-En un componente botón no es tan cómodo establecer su label como si fuese un atributo, sino que sería más fácil de entender si el texto lo escribo como hijo del componente. Aplicar la prop children para esto.
-
-💡 Tips
-
-En un componente botón no es tan cómodo establecer su label como si fuese un atributo, sino que sería más fácil de entender si el texto lo escribo como hijo del componente. Aplicar la prop children para esto. */
