@@ -29,7 +29,7 @@ export default function TaskListContainer() {
     },
   ]);
 
-  const handleClick = (id) => {
+  const toggleTask = (id) => {
     setListaTareas(
       listaTareas.map((tarea) => {
         if (tarea.id === id && tarea.completed === false) {
@@ -44,21 +44,19 @@ export default function TaskListContainer() {
     );
   };
 
-  const renderTasks = () => {
-    return listaTareas.map((tarea) => {
-      return (
+  return (
+    <div>
+      {listaTareas.map((tarea) => (
         <div key={tarea.id} id={tarea.id}>
           <p>{tarea.text}</p>
           <button
             style={{ backgroundColor: tarea.completed ? "green" : "gray" }}
-            onClick={() => handleClick(tarea.id)}
+            onClick={() => toggleTask(tarea.id)}
           >
             {tarea.completed ? "Completada" : "Pendiente"}
           </button>
         </div>
-      );
-    });
-  };
-
-  return <div>{renderTasks()}</div>;
+      ))}
+    </div>
+  );
 }
