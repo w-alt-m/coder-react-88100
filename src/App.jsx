@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <ItemCount />
+      <ItemCount /> {/* No entra en la entrega */}
       <ItemListContainer saludo="Bienvenidos a mi App!" greeting={greeting} />
     </>
   );
