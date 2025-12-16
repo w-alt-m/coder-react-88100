@@ -1,5 +1,12 @@
-const ItemListContainer = () => {
-  return <div>test</div>;
+const ItemListContainer = ({ saludo, greeting }) => {
+  return (
+    <>
+      <h1>
+        {saludo}
+        {greeting}
+      </h1>
+    </>
+  );
 };
 
 export default ItemListContainer;

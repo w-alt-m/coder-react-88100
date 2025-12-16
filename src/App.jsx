@@ -1,17 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import ItemListContainer from "./components/ItemListContainer.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const greeting = "Hello World!";
 
   return (
     <>
       <Navbar />
-      <ItemListContainer />
+      <ItemListContainer saludo="Bienvenidos a mi App!" greeting={greeting} />
     </>
   );
 }
