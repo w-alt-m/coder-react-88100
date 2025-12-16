@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import ItemListContainer from "./components/ItemListContainer.jsx";
+import ItemCount from "./components/ItemCount.jsx";
 
 function App() {
   const greeting = "Hello World!";
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <ItemCount />
       <ItemListContainer saludo="Bienvenidos a mi App!" greeting={greeting} />
     </>
   );
