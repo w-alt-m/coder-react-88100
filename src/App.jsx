@@ -9,7 +9,6 @@ function App() {
     <>
       <Navbar />
       <ItemListContainer saludo="Bienvenidos a mi App!" greeting={greeting} />
-      <CartWidget />
     </>
   );
 }
