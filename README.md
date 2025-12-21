@@ -23,7 +23,10 @@ No están renderizados ni forman parte de la aplicación principal.
 Instalación y uso local
 
 1. Clonar el repositorio
-   git clone https://github.com/tu-usuario/coder-react-88100.git
+
+```bash
+git clone https://github.com/tu-usuario/coder-react-88100.git
+```
 
 2. Instalar dependencias
    npm install
