@@ -1,16 +1,27 @@
 import logoReact from "../assets/react.svg";
-import "../App.css";
 import CartWidget from "./CartWidget";
 
 const Navbar = () => {
   return (
-    <nav className="nav-container">
-      <a href="">
-        <img src={logoReact} alt="Logo" />
+    <nav className="w-full h-16 flex items-center px-6 bg-slate-500">
+      <a href="/" className="flex items-center">
+        <img src={logoReact} alt="Logo" className="h-8 w-8" />
       </a>
-      <a href="">Nuevos</a>
-      <a href="">Ofertas</a>
-      <a href="">Más vendidos</a>
+
+      <div className="flex gap-6 mx-8 text-white">
+        <a href="" className="hover:text-cyan-400">
+          Nuevos
+        </a>
+        <a href="" className="hover:text-cyan-400">
+          Ofertas
+        </a>
+        <a href="" className="hover:text-cyan-400">
+          Más vendidos
+        </a>
+      </div>
+
+      <div className="flex-1"></div>
+
       <CartWidget />
     </nav>
   );
