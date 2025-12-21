@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+@theme {
+    --color-petpink: #f278a0;
+    --color-petblue: #afe6fa;
+    --color-petlightblue: #e7f5ff;
+}
