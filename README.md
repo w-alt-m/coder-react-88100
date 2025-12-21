@@ -29,9 +29,15 @@ git clone https://github.com/tu-usuario/coder-react-88100.git
 ```
 
 2. Instalar dependencias
-   npm install
+
+```bash
+npm install
+```
 
 3. Iniciar entorno de desarrollo
-   npm run dev
+
+```bash
+npm run dev
+```
 
 ---
