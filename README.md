@@ -30,3 +30,5 @@ Instalación y uso local
 
 3. Iniciar entorno de desarrollo
    npm run dev
+
+---
