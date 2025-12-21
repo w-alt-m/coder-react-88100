@@ -1,8 +1,10 @@
 import logoReact from "../assets/react.svg";
 import CartWidget from "./CartWidget";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="bg-petblue">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
@@ -37,13 +39,6 @@ const Navbar = () => {
         </div>
 
         <CartWidget />
-        <button
-          className="md:hidden ml-2 p-2 rounded-md text-slate-800 hover:bg-slate-200/30"
-          onClick={() => {}}
-          aria-label="Abrir menu"
-        >
-          <GiHamburgerMenu />
-        </button>
       </div>
     </nav>
   );
