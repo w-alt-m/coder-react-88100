@@ -1,20 +1,22 @@
+import { Link } from "react-router-dom";
+
 const NavMenu = () => (
   <>
     <li>
-      <a>Inicio</a>
+      <Link to="/">Inicio</Link>
     </li>
     <li>
       <details>
         <summary>Perros</summary>
-        <ul className="p-2 bg-base-100">
+        <ul className="p-2 bg-base-100 z-50 w-40">
           <li>
-            <a>Alimento</a>
+            <Link to="/category/perros-alimento">Alimento</Link>
           </li>
           <li>
-            <a>Juguetes</a>
+            <Link to="/category/juguetes">Juguetes</Link>
           </li>
           <li>
-            <a>Accesorios</a>
+            <Link to="/category/perros-accesorios">Accesorios</Link>
           </li>
         </ul>
       </details>
@@ -22,15 +24,15 @@ const NavMenu = () => (
     <li>
       <details>
         <summary>Gatos</summary>
-        <ul className="p-2 bg-base-100">
+        <ul className="p-2 bg-base-100 z-50 w-40">
           <li>
-            <a>Alimento</a>
+            <Link to="/category/gatos-alimento">Alimento</Link>
           </li>
           <li>
-            <a>Juguetes</a>
+            <Link to="/category/juguetes">Juguetes</Link>
           </li>
           <li>
-            <a>Accesorios</a>
+            <Link to="/category/gatos-accesorios">Accesorios</Link>
           </li>
         </ul>
       </details>
@@ -39,3 +41,4 @@ const NavMenu = () => (
 );
 
 export default NavMenu;
+
