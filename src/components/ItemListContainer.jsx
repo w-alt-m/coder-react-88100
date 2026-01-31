@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../asyncMock/data";
+import ItemList from "./ItemList";
 
-const ItemListContainer = ({ test }) => {
+const ItemListContainer = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -11,9 +12,9 @@ const ItemListContainer = ({ test }) => {
   }, []);
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello {test}!</h1>
-    </>
+    <div>
+      <ItemList data={data} />
+    </div>
   );
 };
 
