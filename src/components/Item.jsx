@@ -13,7 +13,7 @@ const Item = ({ producto }) => {
       </figure>
       <div className="card-body items-center text-center">
         <h2 className="card-title">{producto.name}</h2>
-        <p className="font-bold text-lg">${producto.price.toLocaleString("es-AR")}</p>
+        <p className="font-bold text-lg">${producto.price}</p>
         <div className="card-actions">
           <Link to={`/item/${producto.id}`} className="btn btn-primary">
             Ver Más
@@ -25,4 +25,3 @@ const Item = ({ producto }) => {
 };
 
 export default Item;
-
