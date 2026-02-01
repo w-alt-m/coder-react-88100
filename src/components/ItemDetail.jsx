@@ -1,23 +1,19 @@
-import {useContext, useState} from 'react'
-import { CartContext } from '../context/CartContext'
+import React from 'react'
 import ItemCount from './ItemCount'
-import { Link } from 'react-router-dom'
 
-const ItemDetail = ({detail}) => {
-    const [purchase, setPurchase]= useState(false)
-    const {addItem} = useContext(CartContext)
-  const onAdd = (cantidad)=> {
-    addItem(detail,cantidad)
-    setPurchase(true)
+const ItemDetail = ({ detail }) => {
+  const onAdd = (cantidad) => {
+    console.log("Agregado al carrito:", detail.name, "Cantidad:", cantidad)
   }
+
   return (
-    <div>
-        <h1>Detalle del producto: {detail.name}</h1>
-        <img alt={detail.name} src={detail.img}/>
-        <p>{detail.description}</p>
-        <p>Stock: {detail.stock} unidades disponibles</p>
-        <p>Precio: ${detail.price},00</p>
-       {purchase ? <Link className='btn btn-dark' to='/cart'>Ir al carrito</Link> : <ItemCount stock={detail.stock} onAdd={onAdd}/>}
+    <div className='p-8 border rounded-lg shadow-md max-w-lg mx-auto bg-white'>
+      <h1 className='text-2xl font-bold mb-4'>{detail.name}</h1>
+      <img alt={detail.name} src={detail.img} className='w-full h-64 object-cover rounded-md mb-4' />
+      <p className='text-gray-600 mb-2'>{detail.description}</p>
+      <p className='font-semibold'>Stock: {detail.stock} unidades disponibles</p>
+      <p className='text-xl text-primary font-bold mb-6'>Precio: ${detail.price},00</p>
+      <ItemCount stock={detail.stock} onAdd={onAdd} />
     </div>
   )
 }

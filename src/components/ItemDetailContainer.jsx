@@ -1,24 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { getOneProduct, getProducts } from '../asyncMock/data'
+import { getProducts } from '../asyncMock/data'
 import { useParams } from 'react-router-dom'
 import ItemDetail from './ItemDetail'
-import Loader from './Loader'
 
 const ItemDetailContainer = () => {
-    const [detail, setDetail]= useState({})
-    const [cargando, setCargando]=useState(true)
-   const {id} = useParams()
- 
-    useEffect(()=>{
-        getProducts()
-        .then((res)=> setDetail(res.find((prod)=> prod.id === id)))
-        .catch((error)=> console.log(error))
-    },[])
+  const [detail, setDetail] = useState({})
+  const { id } = useParams()
+  useEffect(() => {
+    getProducts()
+      .then((res) => setDetail(res.find((prod) => prod.id === id)))
+      .catch((error) => console.log(error))
+  }, [id])
 
   return (
-    <>
-       {cargando ? <Loader text='Cargando detalle...'/> : <ItemDetail detail={detail}/>} 
-    </>
+    <div className="container mx-auto py-10">
+      {detail.id ? <ItemDetail detail={detail} /> : <p className="text-center italic">Buscando producto...</p>}
+    </div>
   )
 }
 
