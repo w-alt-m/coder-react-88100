@@ -13,9 +13,6 @@ const NavMenu = () => (
             <Link to="/category/perros-alimento">Alimento</Link>
           </li>
           <li>
-            <Link to="/category/juguetes">Juguetes</Link>
-          </li>
-          <li>
             <Link to="/category/perros-accesorios">Accesorios</Link>
           </li>
         </ul>
@@ -26,16 +23,16 @@ const NavMenu = () => (
         <summary>Gatos</summary>
         <ul className="p-2 bg-base-100 z-50 w-40">
           <li>
-            <Link to="/category/gatos-alimento">Alimento</Link>
-          </li>
-          <li>
-            <Link to="/category/juguetes">Juguetes</Link>
-          </li>
-          <li>
             <Link to="/category/gatos-accesorios">Accesorios</Link>
           </li>
         </ul>
       </details>
+    </li>
+    <li>
+      <Link to="/category/juguetes">Juguetes</Link>
+    </li>
+    <li>
+      <Link to="/category/higiene">Higiene</Link>
     </li>
   </>
 );
