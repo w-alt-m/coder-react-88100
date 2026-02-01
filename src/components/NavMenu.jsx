@@ -6,7 +6,7 @@ const NavMenu = () => (
       <Link to="/">Inicio</Link>
     </li>
     <li>
-      <details>
+      <details name="nav-menu">
         <summary>Perros</summary>
         <ul className="p-2 bg-base-100 z-50 w-40">
           <li>
@@ -19,7 +19,7 @@ const NavMenu = () => (
       </details>
     </li>
     <li>
-      <details>
+      <details name="nav-menu">
         <summary>Gatos</summary>
         <ul className="p-2 bg-base-100 z-50 w-40">
           <li>
