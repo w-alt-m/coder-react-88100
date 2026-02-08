@@ -39,6 +39,14 @@ export const CartProvider = ({ children }) => {
     return cart.some((prod) => prod.id === id);
   };
 
+  //funcion para el total a pagar
+
+  const total = () => {};
+
+  //funcion que sume cantidades
+
+  const cartQuantity = () => {};
+
   return (
     <CartContext.Provider
       value={{ cart, setCart, addItem, clear, removeItem, isInCart }}
