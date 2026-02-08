@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../asyncMock/data";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
+import Loader from "./Loader";
 
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({});
@@ -14,11 +15,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div className="container mx-auto py-10">
-      {detail.id ? (
-        <ItemDetail detail={detail} />
-      ) : (
-        <p className="text-center italic">Buscando producto...</p>
-      )}
+      {detail.id ? <ItemDetail detail={detail} /> : <Loader />}
     </div>
   );
 };
