@@ -4,12 +4,11 @@ import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ detail }) => {
   // context
-  const context = useContext(CartContext);
-  console.log(context);
+  const { addItem } = useContext(CartContext);
 
   // onAdd para que era? terminar
   const onAdd = (cantidad) => {
-    console.log("Agregado al carrito:", detail.name, "Cantidad:", cantidad);
+    addItem(detail, cantidad);
   };
 
   return (

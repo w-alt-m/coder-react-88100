@@ -9,8 +9,8 @@ import { CartProvider } from "./context/CartContext";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <CartProvider>
+        <Navbar />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/category/:type" element={<ItemListContainer />} />

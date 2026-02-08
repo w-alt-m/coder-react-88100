@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+
 const CartWidget = () => {
   return (
     <div className="dropdown dropdown-end">
