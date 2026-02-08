@@ -1,4 +1,3 @@
-import React from "react";
 import Item from "./Item";
 
 const ItemList = ({ data }) => {
@@ -12,4 +11,3 @@ const ItemList = ({ data }) => {
 };
 
 export default ItemList;
-
