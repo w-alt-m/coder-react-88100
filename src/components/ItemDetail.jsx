@@ -31,7 +31,7 @@ const ItemDetail = ({ detail }) => {
         Precio: ${detail.price},00
       </p>
       {purchase ? (
-        <Link></Link>
+        <Link to="/cart">Ir al carrito</Link>
       ) : (
         <ItemCount stock={detail.stock} onAdd={onAdd} />
       )}
