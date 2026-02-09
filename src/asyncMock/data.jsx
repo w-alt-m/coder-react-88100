@@ -6,7 +6,7 @@ const products = [
     stock: 25,
     price: 18990,
     category: "perros-alimento",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1132075944/photo/dog-food-bag-packages-design-3d-rendering.jpg?s=2048x2048&w=is&k=20&c=mLcJHuFIG3kBrMfWnrpT752tSFZ9GdOdQk3ODx1hgMc=",
   },
   {
     id: "02",
@@ -15,7 +15,7 @@ const products = [
     stock: 18,
     price: 7990,
     category: "higiene",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1433506264/vector/cosmetic-for-pets-shampoo-and-spray-for-dog-and-puppy-illustration-vector.jpg?s=2048x2048&w=is&k=20&c=bt7cDruepq-Xpkhzrf1Ft6Ss73XAjGh5WeFDqvlzles=",
   },
   {
     id: "03",
@@ -24,7 +24,7 @@ const products = [
     stock: 40,
     price: 4990,
     category: "juguetes",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/116568510/photo/chewable-dog-toy-rope.jpg?s=2048x2048&w=is&k=20&c=G7unBOmGzoxmcJFKtxF484JL3tsNT3VRNb3CvB8t5UI=",
   },
   {
     id: "04",
@@ -33,7 +33,7 @@ const products = [
     stock: 12,
     price: 12990,
     category: "gatos-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1383192919/photo/blue-cat-litter-tray-isolated-on-white-with-grey-litter-and-a-scoop.jpg?s=2048x2048&w=is&k=20&c=LrBfpBc2ahgDdIgO3UBRANYIFUjW7KpUmDD_G6AM8lo=",
   },
   {
     id: "05",
@@ -43,7 +43,7 @@ const products = [
     stock: 30,
     price: 6990,
     category: "perros-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/507903186/photo/lasso-orange-and-black-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=NuD7oH-Fs8ZA7-ZtXc438gBqCjaRkb0sALglskaVCTc=",
   },
   {
     id: "06",
@@ -52,7 +52,7 @@ const products = [
     stock: 50,
     price: 3500,
     category: "juguetes",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/2206209353/photo/massage-ball.jpg?s=2048x2048&w=is&k=20&c=EBxottSr-M3TV4fODIdS6ED1aYGQP6wizjmS8QRDHes=",
   },
   {
     id: "07",
@@ -61,7 +61,7 @@ const products = [
     stock: 8,
     price: 45900,
     category: "gatos-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1137367536/photo/scratch-post-isolated.jpg?s=2048x2048&w=is&k=20&c=ZYjV8S8oxoiE55WF3kEdFmXs1f8FTr2d4tkQ0JwMEgw=",
   },
   {
     id: "08",
@@ -70,7 +70,7 @@ const products = [
     stock: 15,
     price: 22000,
     category: "perros-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/488640434/photo/pet-bed.jpg?s=2048x2048&w=is&k=20&c=VGUsf3MuJdMhkofdffLjO5YjfozUz5m7_gOQLHm_yVg=",
   },
   {
     id: "09",
@@ -79,7 +79,7 @@ const products = [
     stock: 25,
     price: 5200,
     category: "higiene",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/471058010/photo/pet-grooming-brush.jpg?s=2048x2048&w=is&k=20&c=SwRuzLw8aWw67OqK9BddLgLbqkouRXJFfZUdfustj2I=",
   },
   {
     id: "10",
@@ -88,7 +88,7 @@ const products = [
     stock: 60,
     price: 2800,
     category: "perros-alimento",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1473825736/vector/dog-food-packaging-design-illustration-vector.jpg?s=2048x2048&w=is&k=20&c=ra7soUQzVi9mwXJ9mbHZs52Dda7qpUaQjyEnof5cp8Y=",
   },
   {
     id: "11",
@@ -97,7 +97,7 @@ const products = [
     stock: 20,
     price: 15400,
     category: "perros-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1084840294/photo/pet-harness-isolated-on-white-background-pet-accessories-concept.jpg?s=2048x2048&w=is&k=20&c=Um4ehpR9fArMMpE-raXQjvWPEKSyDUxC83z4PfuvRUk=",
   },
   {
     id: "12",
@@ -106,7 +106,7 @@ const products = [
     stock: 10,
     price: 32000,
     category: "gatos-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1061642872/photo/thirsty-tabby-cat-drinking-water-from-a-pet-drinking-fountain-side-view-with-copy-space.jpg?s=2048x2048&w=is&k=20&c=-gLudQE9_5LaW26kt6bNgeWOV78uiSgbjG6JTToB5ks=",
   },
   {
     id: "13",
@@ -115,7 +115,7 @@ const products = [
     stock: 35,
     price: 4900,
     category: "juguetes",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/2187096992/photo/red-rubber-dog-bone.jpg?s=2048x2048&w=is&k=20&c=pfq1YvdSkdz42g90IK4a1RYK13aYi03gejN4aRQ9szE=",
   },
   {
     id: "14",
@@ -124,7 +124,7 @@ const products = [
     stock: 100,
     price: 8500,
     category: "higiene",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/2153005813/photo/cosmetic-products-and-lice-comb-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=-YBQPVn_7d-jRVmd2KYuV5JHKmniXzmrENor529B7dE=",
   },
   {
     id: "15",
@@ -133,16 +133,16 @@ const products = [
     stock: 12,
     price: 18900,
     category: "perros-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1144230301/photo/double-pet-bowl-side-view-3d.jpg?s=2048x2048&w=is&k=20&c=p3svAPCXxnLZoISBP-zUwDX1m6FljeYIjrJ1TBZPlc4=",
   },
   {
     id: "16",
-    name: "Collar Anti-Ahogo Gato",
-    description: "Collar con broche de seguridad que se abre ante tirones fuertes",
+    name: "Collar Gato",
+    description: "Collar de gato",
     stock: 45,
     price: 3200,
     category: "gatos-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1199865571/photo/pink-cat-collar-on-white.jpg?s=2048x2048&w=is&k=20&c=LlqikasDI-O71LNo14Oi8ZXx4KBk3geiUwDeotr_XS8=",
   },
   {
     id: "17",
@@ -151,7 +151,7 @@ const products = [
     stock: 30,
     price: 4500,
     category: "juguetes",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1683240547/photo/cat-cardboard-scratcher.jpg?s=2048x2048&w=is&k=20&c=az6irlhG4T0IxS_yDipC6Swmaq3BKokI_pkE7NgPiC4=",
   },
   {
     id: "18",
@@ -160,7 +160,7 @@ const products = [
     stock: 22,
     price: 9800,
     category: "perros-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1356698824/photo/set-of-bottles-for-dogs-to-drink-water-outside-on-white-background-multicolored-bottles-from.jpg?s=2048x2048&w=is&k=20&c=vAeV-k7mqfIduE1dCUtYXcOUjAbJSwyCXNLyAYRxPsQ=",
   },
   {
     id: "19",
@@ -169,7 +169,7 @@ const products = [
     stock: 18,
     price: 6500,
     category: "higiene",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1446262943/vector/transparent-bottle-mockup-with-different-labels.jpg?s=2048x2048&w=is&k=20&c=pb-uS9JbGhnDrMQ61oNgzXzb4j8CWdF08pwrSR4R-9k=",
   },
   {
     id: "20",
@@ -178,7 +178,7 @@ const products = [
     stock: 50,
     price: 4200,
     category: "perros-alimento",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/2202884877/photo/dogs-dental-sticks-white-background.jpg?s=2048x2048&w=is&k=20&c=v_rVOa3Zz5YddEpuwYcDJ3BcAFrbaliT5zhgSs28Km8=",
   },
   {
     id: "21",
@@ -187,7 +187,7 @@ const products = [
     stock: 5,
     price: 28900,
     category: "gatos-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1503923434/photo/domestic-cat-looks-out-the-window-sitting-in-a-hammock.jpg?s=2048x2048&w=is&k=20&c=w3Tm0MeeEdvYvL6yqpTGev5LuLyne5AuyBb5Vb2btpA=",
   },
   {
     id: "22",
@@ -196,7 +196,7 @@ const products = [
     stock: 15,
     price: 12600,
     category: "juguetes",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/490787018/photo/colorful-doll-and-toys-collection-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=2ZpZGUeIZPD5PX7cm7hNl8ON-R4StQ7IK58NGBLNxjk=",
   },
   {
     id: "23",
@@ -205,7 +205,7 @@ const products = [
     stock: 40,
     price: 15900,
     category: "higiene",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1369385638/photo/puppy-dog-sitting-on-a-pee-disposables-pad-training-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=EabfUuep9UbL_yDGzkr-2T5T1I9Na2zuRUU5VMkremA=",
   },
   {
     id: "24",
@@ -214,7 +214,7 @@ const products = [
     stock: 20,
     price: 7400,
     category: "higiene",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/459953371/photo/toothbrush-for-pets-isolated-on-white.jpg?s=2048x2048&w=is&k=20&c=78pVi382fWixZDjSvGjT7J9EhfkowKnCB6kKcgvVO6g=",
   },
   {
     id: "25",
@@ -223,7 +223,7 @@ const products = [
     stock: 7,
     price: 38500,
     category: "gatos-accesorios",
-    img: "https://placedog.net/500/500?random",
+    img: "https://media.istockphoto.com/id/1300655413/photo/funny-yellow-backpack-with-a-transparent-window-porthole-for-walking-and-carrying-cats.jpg?s=2048x2048&w=is&k=20&c=leN15Tzkdk05y2dqE0dpluLVJ9OZAUWsxGx-ecSFB44=",
   },
 ];
 
