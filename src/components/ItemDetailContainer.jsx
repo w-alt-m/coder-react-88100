@@ -6,16 +6,19 @@ import Loader from "./Loader";
 
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({});
+  const [loading, setLoading] = useState(true);
   const { id } = useParams();
+
   useEffect(() => {
     getProducts()
       .then((res) => setDetail(res.find((prod) => prod.id === id)))
-      .catch((error) => console.log(error));
+      .catch((error) => console.log(error))
+      .finally(() => setLoading(false));
   }, [id]);
 
   return (
     <div className="container mx-auto py-10">
-      {detail.id ? <ItemDetail detail={detail} /> : <Loader />}
+      {loading ? <Loader /> : <ItemDetail detail={detail} />}
     </div>
   );
 };
