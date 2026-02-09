@@ -12,18 +12,18 @@ const ItemCount = ({ stock, onAdd }) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 items-center w-full">
-      <div className="flex gap-4 items-center justify-center border p-2 rounded-lg">
+    <div className="flex flex-col gap-4 w-full">
+      <div className="flex items-center justify-center gap-4 bg-base-200 p-2 rounded-full w-full">
         <button
-          className="btn btn-circle btn-sm btn-outline"
+          className="btn btn-circle btn-sm btn-ghost text-xl text-primary"
           onClick={decrement}
           disabled={count <= 1}
         >
           -
         </button>
-        <span className="text-xl w-8 text-center">{count}</span>
+        <span className="text-xl font-bold text-base-content w-8 text-center">{count}</span>
         <button
-          className="btn btn-circle btn-sm btn-outline"
+          className="btn btn-circle btn-sm btn-ghost text-xl text-primary"
           onClick={increment}
           disabled={count >= stock}
         >
@@ -31,7 +31,7 @@ const ItemCount = ({ stock, onAdd }) => {
         </button>
       </div>
       <button
-        className="btn btn-neutral w-full"
+        className="btn btn-primary w-full rounded-full text-white font-bold"
         onClick={() => onAdd(count)}
         disabled={stock <= 0}
       >
