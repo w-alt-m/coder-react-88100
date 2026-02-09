@@ -3,25 +3,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
-/* Define the custom warm theme variables */
 :root {
-    /* Fonts */
     --font-nunito: "Nunito", sans-serif;
 
-    /* Core Colors (Warm Pet Shop Palette) */
-    /* Primary: Warm Roasted Orange (#E07A5F) -> OKLCH(0.65 0.18 45) */
     --color-primary: oklch(65% 0.18 45);
 
-    /* Secondary: Soft Muted Green (#81B29A) -> OKLCH(0.75 0.12 150) */
     --color-secondary: oklch(75% 0.12 150);
 
-    /* Backgrounds: Warm Cream (#F2E9E4) -> OKLCH(0.95 0.02 40) */
     --color-base-100: oklch(98% 0.01 80);
-    /* Card White/Cream */
     --color-base-200: oklch(95% 0.03 80);
-    /* Page Background */
 
-    /* Text: Dark Warm Brown */
     --color-base-content: oklch(35% 0.05 50);
 
     background-color: var(--color-base-200);
@@ -29,44 +20,31 @@
     font-family: var(--font-nunito);
 }
 
-/* DaisyUI Color Overrides for 'light' theme */
+
 @theme {
     --font-nunito: "Nunito", sans-serif;
 }
 
-/* Force override DaisyUI variables for the document */
-/* Using @layer base to ensure high specificity */
 @layer base {
     :root {
-        /* Primary (Buttons, Links) - Warm Orange */
         --p: 65% 0.18 45;
         --pc: 98% 0.02 45;
-        /* Text on primary */
 
-        /* Secondary (Accents) - Soft Green */
         --s: 75% 0.12 150;
         --sc: 20% 0.05 150;
 
-        /* Accent - Muted Yellow */
         --a: 80% 0.15 85;
         --ac: 25% 0.05 85;
 
-        /* Base Colors (Backgrounds) */
         --b1: 98% 0.01 80;
-        /* Card BG - Cream */
         --b2: 95% 0.03 80;
-        /* Page BG - Darker Cream */
         --b3: 90% 0.05 80;
-        /* Borders */
 
-        /* Content (Text) - Warm Brown */
         --bc: 35% 0.05 50;
 
-        /* Neutral - Dark Brown */
         --n: 40% 0.05 50;
         --nc: 95% 0.02 50;
 
-        /* Rounded corners for friendliness */
         --rounded-box: 1.5rem;
         --rounded-btn: 2rem;
     }
