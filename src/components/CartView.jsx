@@ -8,7 +8,6 @@ const CartView = () => {
       <h1 className="text-3xl font-bold text-primary mb-8 text-center">Tu carrito 🛒</h1>
       <div className="overflow-x-auto bg-base-100 rounded-3xl shadow-xl border border-base-200">
         <table className="table table-lg w-full">
-          {/* head */}
           <thead className="bg-base-200 text-base text-base-content/70">
             <tr>
               <th>Producto</th>

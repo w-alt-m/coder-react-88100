@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const EmptyCart = () => {
-  //la idea es invitar al usuario a comprar
   return (
     <div className="flex flex-col items-center justify-center min-h-[50vh] text-center gap-4 px-4">
       <h1 className="text-4xl font-bold text-primary mb-2">El carrito está vacío 🐾</h1>

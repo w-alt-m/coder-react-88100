@@ -6,10 +6,8 @@ import { useState } from "react";
 
 const ItemDetail = ({ detail }) => {
   const [purchase, setPurchase] = useState(false);
-  // context
   const { addItem } = useContext(CartContext);
 
-  // onAdd para que era? terminar
   const onAdd = (cantidad) => {
     addItem(detail, cantidad);
     setPurchase(true);
