@@ -1,14 +1,18 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import ItemCount from "./ItemCount";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const ItemDetail = ({ detail }) => {
+  const [purchase, setPurchase] = useState(false);
   // context
   const { addItem } = useContext(CartContext);
 
   // onAdd para que era? terminar
   const onAdd = (cantidad) => {
     addItem(detail, cantidad);
+    setPurchase(true);
   };
 
   return (
@@ -26,7 +30,11 @@ const ItemDetail = ({ detail }) => {
       <p className="text-xl text-primary font-bold mb-6">
         Precio: ${detail.price},00
       </p>
-      <ItemCount stock={detail.stock} onAdd={onAdd} />
+      {purchase ? (
+        <Link></Link>
+      ) : (
+        <ItemCount stock={detail.stock} onAdd={onAdd} />
+      )}
     </div>
   );
 };
