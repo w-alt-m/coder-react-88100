@@ -14,7 +14,7 @@ const products = [
     description: "Shampoo suave para piel sensible de perros y gatos",
     stock: 18,
     price: 7990,
-    category: "higiene",
+    category: "perros-higiene",
     img: "https://media.istockphoto.com/id/1433506264/vector/cosmetic-for-pets-shampoo-and-spray-for-dog-and-puppy-illustration-vector.jpg?s=2048x2048&w=is&k=20&c=bt7cDruepq-Xpkhzrf1Ft6Ss73XAjGh5WeFDqvlzles=",
   },
   {
@@ -23,7 +23,7 @@ const products = [
     description: "Juguete para morder y tirar, ideal para perros medianos",
     stock: 40,
     price: 4990,
-    category: "juguetes",
+    category: "perros-juguetes",
     img: "https://media.istockphoto.com/id/116568510/photo/chewable-dog-toy-rope.jpg?s=2048x2048&w=is&k=20&c=G7unBOmGzoxmcJFKtxF484JL3tsNT3VRNb3CvB8t5UI=",
   },
   {
@@ -51,7 +51,7 @@ const products = [
     description: "Juguete resistente con sonido para llamar la atención del perro",
     stock: 50,
     price: 3500,
-    category: "juguetes",
+    category: "perros-juguetes",
     img: "https://media.istockphoto.com/id/2206209353/photo/massage-ball.jpg?s=2048x2048&w=is&k=20&c=EBxottSr-M3TV4fODIdS6ED1aYGQP6wizjmS8QRDHes=",
   },
   {
@@ -78,7 +78,7 @@ const products = [
     description: "Accesorio para desenredar y remover pelo muerto sin tirones",
     stock: 25,
     price: 5200,
-    category: "higiene",
+    category: "gatos-higiene",
     img: "https://media.istockphoto.com/id/471058010/photo/pet-grooming-brush.jpg?s=2048x2048&w=is&k=20&c=SwRuzLw8aWw67OqK9BddLgLbqkouRXJFfZUdfustj2I=",
   },
   {
@@ -114,7 +114,7 @@ const products = [
     description: "Hueso de larga duración para calmar la ansiedad",
     stock: 35,
     price: 4900,
-    category: "juguetes",
+    category: "perros-juguetes",
     img: "https://media.istockphoto.com/id/2187096992/photo/red-rubber-dog-bone.jpg?s=2048x2048&w=is&k=20&c=pfq1YvdSkdz42g90IK4a1RYK13aYi03gejN4aRQ9szE=",
   },
   {
@@ -123,7 +123,7 @@ const products = [
     description: "Tratamiento efectivo contra parásitos externos",
     stock: 100,
     price: 8500,
-    category: "higiene",
+    category: "perros-higiene",
     img: "https://media.istockphoto.com/id/2153005813/photo/cosmetic-products-and-lice-comb-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=-YBQPVn_7d-jRVmd2KYuV5JHKmniXzmrENor529B7dE=",
   },
   {
@@ -150,7 +150,7 @@ const products = [
     description: "Superficie para rascar que incluye catnip para mayor atracción",
     stock: 30,
     price: 4500,
-    category: "juguetes",
+    category: "gatos-juguetes",
     img: "https://media.istockphoto.com/id/1683240547/photo/cat-cardboard-scratcher.jpg?s=2048x2048&w=is&k=20&c=az6irlhG4T0IxS_yDipC6Swmaq3BKokI_pkE7NgPiC4=",
   },
   {
@@ -168,7 +168,7 @@ const products = [
     description: "Fragancia suave y duradera que elimina malos olores sin irritar",
     stock: 18,
     price: 6500,
-    category: "higiene",
+    category: "perros-higiene",
     img: "https://media.istockphoto.com/id/1446262943/vector/transparent-bottle-mockup-with-different-labels.jpg?s=2048x2048&w=is&k=20&c=pb-uS9JbGhnDrMQ61oNgzXzb4j8CWdF08pwrSR4R-9k=",
   },
   {
@@ -195,7 +195,7 @@ const products = [
     description: "Peluche ultra resistente con texturas variadas para morder",
     stock: 15,
     price: 12600,
-    category: "juguetes",
+    category: "perros-juguetes",
     img: "https://media.istockphoto.com/id/490787018/photo/colorful-doll-and-toys-collection-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=2ZpZGUeIZPD5PX7cm7hNl8ON-R4StQ7IK58NGBLNxjk=",
   },
   {
@@ -204,7 +204,7 @@ const products = [
     description: "Pack de 30 unidades para educar a cachorros a hacer sus necesidades",
     stock: 40,
     price: 15900,
-    category: "higiene",
+    category: "perros-higiene",
     img: "https://media.istockphoto.com/id/1369385638/photo/puppy-dog-sitting-on-a-pee-disposables-pad-training-isolated-on-white-background.jpg?s=2048x2048&w=is&k=20&c=EabfUuep9UbL_yDGzkr-2T5T1I9Na2zuRUU5VMkremA=",
   },
   {
@@ -213,7 +213,7 @@ const products = [
     description: "Set para la higiene bucal con sabor a pollo para facilitar el cepillado",
     stock: 20,
     price: 7400,
-    category: "higiene",
+    category: "perros-higiene",
     img: "https://media.istockphoto.com/id/459953371/photo/toothbrush-for-pets-isolated-on-white.jpg?s=2048x2048&w=is&k=20&c=78pVi382fWixZDjSvGjT7J9EhfkowKnCB6kKcgvVO6g=",
   },
   {
@@ -224,6 +224,15 @@ const products = [
     price: 38500,
     category: "gatos-accesorios",
     img: "https://media.istockphoto.com/id/1300655413/photo/funny-yellow-backpack-with-a-transparent-window-porthole-for-walking-and-carrying-cats.jpg?s=2048x2048&w=is&k=20&c=leN15Tzkdk05y2dqE0dpluLVJ9OZAUWsxGx-ecSFB44=",
+  },
+  {
+    id: "26",
+    name: "Balanceado Premium para Gatos",
+    description: "Alimento completo y balanceado para gatos adultos",
+    stock: 25,
+    price: 15990,
+    category: "gatos-alimento",
+    img: "https://media.istockphoto.com/id/1144230301/photo/double-pet-bowl-side-view-3d.jpg?s=2048x2048&w=is&k=20&c=p3svAPCXxnLZoISBP-zUwDX1m6FljeYIjrJ1TBZPlc4=",
   },
 ];
 

@@ -40,6 +40,22 @@ const NavMenu = () => {
                 Accesorios
               </Link>
             </li>
+            <li>
+              <Link
+                to="/category/perros-juguetes"
+                className="hover:text-primary hover:bg-transparent"
+              >
+                Juguetes
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/category/perros-higiene"
+                className="hover:text-primary hover:bg-transparent"
+              >
+                Higiene
+              </Link>
+            </li>
           </ul>
         </details>
       </li>
@@ -52,32 +68,38 @@ const NavMenu = () => {
           <ul className="p-2 bg-base-100 z-50 w-44 shadow-xl border border-base-200 rounded-xl">
             <li>
               <Link
+                to="/category/gatos-alimento"
+                className="hover:text-primary hover:bg-transparent"
+              >
+                Alimento
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/category/gatos-accesorios"
                 className="hover:text-primary hover:bg-transparent"
               >
                 Accesorios
               </Link>
             </li>
+            <li>
+              <Link
+                to="/category/gatos-juguetes"
+                className="hover:text-primary hover:bg-transparent"
+              >
+                Juguetes
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/category/gatos-higiene"
+                className="hover:text-primary hover:bg-transparent"
+              >
+                Higiene
+              </Link>
+            </li>
           </ul>
         </details>
-      </li>
-
-      <li>
-        <Link
-          to="/category/juguetes"
-          className="font-bold text-lg hover:text-primary"
-        >
-          Juguetes
-        </Link>
-      </li>
-
-      <li>
-        <Link
-          to="/category/higiene"
-          className="font-bold text-lg hover:text-primary"
-        >
-          Higiene
-        </Link>
       </li>
     </>
   );
