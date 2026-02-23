@@ -8,12 +8,12 @@ import { db } from "../service/firebase";
 const ItemListContainer = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const { type } = useParams();
+  const { categoryId } = useParams();
 
   useEffect(() => {
     setLoading(true);
-    const prodCollection = type
-      ? query(collection(db, "productos"), where("category", "==", type))
+    const prodCollection = categoryId
+      ? query(collection(db, "productos"), where("category", "==", categoryId))
       : collection(db, "productos");
     getDocs(prodCollection)
       .then((res) => {
@@ -27,7 +27,7 @@ const ItemListContainer = () => {
       })
       .catch((error) => console.log(error))
       .finally(() => setLoading(false));
-  }, [type]);
+  }, [categoryId]);
 
   return <>{loading ? <Loader /> : <ItemList data={data} />}</>;
 };
