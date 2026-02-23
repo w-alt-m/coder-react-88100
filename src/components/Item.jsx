@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({ producto }) => {
   return (
-    <div className="card bg-base-100 w-80 shadow-xl border border-base-200 rounded-3xl">
+    <div className="card bg-base-100 w-80 shadow-xl border border-base-200 rounded-3xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300">
       <figure className="px-6 pt-6">
         <img
           src={producto.img}
