@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 const NavMenu = () => {
@@ -13,9 +13,12 @@ const NavMenu = () => {
   return (
     <>
       <li>
-        <Link to="/" className="font-bold text-lg hover:text-primary">
+        <NavLink
+          to="/"
+          className={({ isActive }) => `font-bold text-lg hover:text-primary ${isActive ? 'text-primary bg-base-200' : ''}`}
+        >
           Inicio
-        </Link>
+        </NavLink>
       </li>
 
       <li>
@@ -25,36 +28,36 @@ const NavMenu = () => {
           </summary>
           <ul className="p-2 bg-base-100 z-50 w-44 shadow-xl border border-base-200 rounded-xl">
             <li>
-              <Link
+              <NavLink
                 to="/category/perros-alimento"
-                className="hover:text-primary hover:bg-transparent"
+                className={({ isActive }) => `hover:text-primary hover:bg-transparent ${isActive ? 'text-primary font-bold' : ''}`}
               >
                 Alimento
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/category/perros-accesorios"
-                className="hover:text-primary hover:bg-transparent"
+                className={({ isActive }) => `hover:text-primary hover:bg-transparent ${isActive ? 'text-primary font-bold' : ''}`}
               >
                 Accesorios
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/category/perros-juguetes"
-                className="hover:text-primary hover:bg-transparent"
+                className={({ isActive }) => `hover:text-primary hover:bg-transparent ${isActive ? 'text-primary font-bold' : ''}`}
               >
                 Juguetes
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/category/perros-higiene"
-                className="hover:text-primary hover:bg-transparent"
+                className={({ isActive }) => `hover:text-primary hover:bg-transparent ${isActive ? 'text-primary font-bold' : ''}`}
               >
                 Higiene
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </details>
@@ -67,36 +70,36 @@ const NavMenu = () => {
           </summary>
           <ul className="p-2 bg-base-100 z-50 w-44 shadow-xl border border-base-200 rounded-xl">
             <li>
-              <Link
+              <NavLink
                 to="/category/gatos-alimento"
-                className="hover:text-primary hover:bg-transparent"
+                className={({ isActive }) => `hover:text-primary hover:bg-transparent ${isActive ? 'text-primary font-bold' : ''}`}
               >
                 Alimento
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/category/gatos-accesorios"
-                className="hover:text-primary hover:bg-transparent"
+                className={({ isActive }) => `hover:text-primary hover:bg-transparent ${isActive ? 'text-primary font-bold' : ''}`}
               >
                 Accesorios
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/category/gatos-juguetes"
-                className="hover:text-primary hover:bg-transparent"
+                className={({ isActive }) => `hover:text-primary hover:bg-transparent ${isActive ? 'text-primary font-bold' : ''}`}
               >
                 Juguetes
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/category/gatos-higiene"
-                className="hover:text-primary hover:bg-transparent"
+                className={({ isActive }) => `hover:text-primary hover:bg-transparent ${isActive ? 'text-primary font-bold' : ''}`}
               >
                 Higiene
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </details>
