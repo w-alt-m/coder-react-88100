@@ -41,15 +41,28 @@ export const CartProvider = ({ children }) => {
 
   //funcion para el total a pagar
 
-  const total = () => {};
+  const total = () => {
+    return cart.reduce((acc, prod) => (acc += prod.qty * prod.price), 0);
+  };
 
   //funcion que sume cantidades
 
-  const cartQuantity = () => {};
+  const cartQuantity = () => {
+    return cart.reduce((acc, prod) => (acc += prod.qty), 0);
+  };
 
   return (
     <CartContext.Provider
-      value={{ cart, setCart, addItem, clear, removeItem, isInCart }}
+      value={{
+        cart,
+        setCart,
+        addItem,
+        clear,
+        removeItem,
+        isInCart,
+        total,
+        cartQuantity,
+      }}
     >
       {children}
     </CartContext.Provider>
