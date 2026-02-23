@@ -5,7 +5,6 @@ const NavMenu = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Cierra todos los <details> abiertos al cambiar de ruta
     document
       .querySelectorAll("details[open]")
       .forEach((detail) => detail.removeAttribute("open"));
