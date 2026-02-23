@@ -1,17 +1,18 @@
 import { createContext } from "react";
-import { useState } from "react";
-
-//crear contexto
+import { useState, useEffect } from "react";
 
 export const CartContext = createContext();
 
-//crear el proveedor
-
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const localData = localStorage.getItem("cart");
+    return localData ? JSON.parse(localData) : [];
+  });
 
-  //funciones (herramientas)
-  //agregar item al carrito (en componente itemdetail)
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   const addItem = (item, qty) => {
     if (isInCart(item.id)) {
       setCart(
@@ -24,28 +25,21 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  //borrar todo (en componente cart y checkout)
   const clear = () => {
     setCart([]);
   };
 
-  //eliminar un item (en componente cart)
   const removeItem = (id) => {
     setCart(cart.filter((prod) => prod.id !== id));
   };
 
-  //retornar booleano (para verificar si ya esta y sumar cantidad y no repetir el producto)
   const isInCart = (id) => {
     return cart.some((prod) => prod.id === id);
   };
 
-  //funcion para el total a pagar
-
   const total = () => {
     return cart.reduce((acc, prod) => (acc += prod.qty * prod.price), 0);
   };
-
-  //funcion que sume cantidades
 
   const cartQuantity = () => {
     return cart.reduce((acc, prod) => (acc += prod.qty), 0);
