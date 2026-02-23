@@ -42,7 +42,11 @@ const CartWidget = () => {
             Subtotal: ${total()}
           </span>
           <div className="card-actions">
-            <Link to="/cart" className="btn btn-primary btn-block text-white">
+            <Link
+              to="/cart"
+              className="btn btn-primary btn-block text-white"
+              onClick={() => document.activeElement.blur()}
+            >
               Ver carrito
             </Link>
           </div>
