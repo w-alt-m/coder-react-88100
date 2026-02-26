@@ -2,12 +2,12 @@
 
 Proyecto frontend desarrollado con React + Vite como práctica final del curso de React en Coderhouse. Este proyecto es una tienda en línea (E-commerce) completamente funcional, que incluye catálogo de productos, carrito de compras y proceso de checkout conectado a una base de datos.
 
-## � Demo en Vivo (Deployment)
+## Demo en Vivo (Deployment)
 
 Puedes visitar y probar la versión desplegada de la aplicación en el siguiente enlace:
 👉 **[https://coder-react-88100.vercel.app/](https://coder-react-88100.vercel.app/)**
 
-## �🌟 Características Principales (Features)
+## 🌟 Características Principales (Features)
 
 Gracias a la estructura del proyecto en `src/`, la aplicación cuenta con las siguientes funcionalidades:
 - **Navegación y Rutas (`react-router-dom`)**:
@@ -31,7 +31,7 @@ El proyecto utiliza las siguientes tecnologías y librerías clave, según se de
 - **[React Icons](https://react-icons.github.io/react-icons/)** (`^5.5.0`) - Iconografía de la app.
 - **[Vite](https://vitejs.dev/)** (`^7.2.4`) - Entorno de desarrollo ultrarrápido.
 
-## � Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 src/
@@ -43,7 +43,7 @@ src/
 └── main.jsx        # Punto de entrada de la aplicación.
 ```
 
-## �🚀 Instalación y Configuración (Setup Instructions)
+## 🚀 Instalación y Configuración (Setup Instructions)
 
 Sigue estos pasos para configurar y ejecutar el proyecto localmente si lo has clonado o copiado a otra computadora:
 
